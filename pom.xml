@@ -22,5 +22,7 @@
 		<module>service-restaurant</module>
 		<module>service-user</module>
 		<module>service-booking</module>
-	</modules>
+        <module>server-eureka</module>
+    </modules>
+
 </project>

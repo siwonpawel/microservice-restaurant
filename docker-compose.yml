@@ -1,0 +1,11 @@
+version: '3'
+services:
+    restaurant-eureka:
+        image: res-eureka-server
+        build:
+            context: ./server-eureka
+            dockerfile: Dockerfile
+            args:
+                buildno: 1
+        ports:
+            - "8761:8761"
