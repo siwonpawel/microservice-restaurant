@@ -9,3 +9,14 @@ services:
                 buildno: 1
         ports:
             - "8761:8761"
+    service-restaurant:
+        image: res-service-restaurant
+        build:
+            context: ./service-restaurant
+            dockerfile: Dockerfile
+            args:
+                buildno: 2
+        ports:
+            - "8080:8080"
+        links:
+            - restaurant-eureka
