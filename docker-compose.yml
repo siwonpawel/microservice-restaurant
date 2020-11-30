@@ -33,3 +33,15 @@ services:
             - "8081:8080"
         links:
             - restaurant-eureka
+
+    service-booking:
+        image: res-service-booking
+        build:
+            context: ./service-booking
+            dockerfile: Dockerfile
+            args:
+                buildno: 2
+        ports:
+            - "8083:8080"
+        links:
+            - restaurant-eureka
