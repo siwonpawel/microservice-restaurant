@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Collection;
 
 @RestController
-@RequestMapping("/api/v1/booking")
+@RequestMapping("/v1/booking")
 public class BookingController {
 
     private BookingService bookingService;

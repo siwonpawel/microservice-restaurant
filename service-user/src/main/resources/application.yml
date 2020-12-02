@@ -1,6 +1,6 @@
 spring:
   application:
-    name: service-user
+    name: user-service
     messages:
       fallback-to-system-locale: false
     cloud:
@@ -41,9 +41,7 @@ server:
 spring:
   aop:
     auto: false
-  config:
-    activate:
-      on-profile: docker
+  profiles: docker
 
 server:
   port: 8080

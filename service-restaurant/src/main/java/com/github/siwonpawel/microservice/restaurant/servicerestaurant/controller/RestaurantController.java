@@ -16,7 +16,7 @@ import java.util.Optional;
 
 @Log4j2
 @RestController
-@RequestMapping("/api/v1/restaurants")
+@RequestMapping("/v1/restaurants")
 public class RestaurantController {
 
     private RestaurantService restaurantService;

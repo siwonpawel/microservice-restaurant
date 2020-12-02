@@ -22,9 +22,9 @@ eureka:
 
 ---
 spring:
-  config:
-    activate:
-      on-profile: docker
+  aop:
+    auto: false
+  profiles: docker
 
 server:
   port: ${vcap.application.port:8761}

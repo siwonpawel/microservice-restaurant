@@ -16,7 +16,7 @@ import java.util.Optional;
 
 @Log4j2
 @RestController
-@RequestMapping("/api/v1/user")
+@RequestMapping("/v1/user")
 public class UserController {
 
     protected UserService userService;

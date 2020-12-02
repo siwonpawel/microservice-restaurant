@@ -18,7 +18,7 @@ eureka:
     initialInstanceInfoReplicationIntervalSeconds: 5
     serviceUrl:
       defaultZone: ${vcap.services.${PREFIX:}eureka.credentials.uri:http://user:password@localhost:8761}/eureka/
-    fetchRegistry: true
+    fetchRegistry: false
 
 server:
   port: 2222
@@ -27,9 +27,7 @@ server:
 spring:
   aop:
     auto: false
-  config:
-    activate:
-      on-profile: docker
+  profiles: docker
 
 server:
   port: 8080

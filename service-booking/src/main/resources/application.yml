@@ -27,9 +27,7 @@ server:
 spring:
   aop:
     auto: false
-  config:
-    activate:
-      on-profile: docker
+  profiles: docker
 
 server:
   port: 8080
