@@ -22,7 +22,7 @@
         <docker.host.address>127.0.0.1</docker.host.address>
         <docker.host>tcp://localhost</docker.host>
         <docker.port>8080</docker.port>
-        <spring-cloud.version>2020.0.0-M5</spring-cloud.version>
+        <spring-cloud.version>Hoxton.BUILD-SNAPSHOT</spring-cloud.version>
     </properties>
 
     <dependencies>

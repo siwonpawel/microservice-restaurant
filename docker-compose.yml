@@ -1,5 +1,20 @@
 version: '3'
 services:
+    service-zuul:
+        image: res-service-zuul
+        build:
+            context: ./server-zuul
+            dockerfile: Dockerfile
+            args:
+                buildno: 2
+        ports:
+            - "8080:8080"
+        links:
+            - restaurant-eureka
+            - service-restaurant
+            - service-user
+            - service-booking
+
     restaurant-eureka:
         image: res-eureka-server
         build:
@@ -8,7 +23,7 @@ services:
             args:
                 buildno: 1
         ports:
-            - "8761:8761"
+            - "8081:8761"
 
     service-restaurant:
         image: res-service-restaurant
@@ -18,7 +33,7 @@ services:
             args:
                 buildno: 2
         ports:
-            - "8080:8080"
+            - "8082:8080"
         links:
             - restaurant-eureka
 
@@ -30,7 +45,7 @@ services:
             args:
                 buildno: 2
         ports:
-            - "8081:8080"
+            - "8083:8080"
         links:
             - restaurant-eureka
 
@@ -42,6 +57,6 @@ services:
             args:
                 buildno: 2
         ports:
-            - "8083:8080"
+            - "8084:8080"
         links:
             - restaurant-eureka

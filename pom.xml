@@ -24,6 +24,6 @@
 		<module>service-booking</module>
         <module>server-eureka</module>
 		<module>server-zuul</module>
-    </modules>
+	</modules>
 
 </project>
