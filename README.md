@@ -27,7 +27,7 @@ in repositrory root folder
 | User       | 2224  |   -    |
 "-" means service is not accessible from outside of Docker  
 
-![Project structure organization](assets\docker_structure.jpg)
+![Project structure organization](assets/docker_structure.jpg)
 ## Services
 ### Restaurant
 #### JSON structure
